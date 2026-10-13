@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+}
+
+#add-expense {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#your-expenses {
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+}
