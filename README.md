@@ -1,57 +1,91 @@
-# SpendWise Dashboard — Week 5
+# SpendWise — Week 6: Interactive Budget Dashboard
 
 ## Project Description
-SpendWise is a personal budgeting dashboard built using HTML, CSS, and JavaScript. This Week 5 version introduces JavaScript to collect budget information, calculate spending, and display a budget summary in the browser console.
 
-## Features
-- Collects the monthly budget using a JavaScript prompt.
-- Collects total expenses using a JavaScript prompt.
-- Calculates the remaining balance.
-- Displays labelled results in the browser console.
-- Uses reusable JavaScript functions.
-- Maintains the existing SpendWise dashboard design.
+SpendWise is a personal budgeting dashboard built with HTML, CSS, and JavaScript. This version allows users to add expenses, view expense records, calculate total spending, and see their remaining budget directly on the webpage.
+
+## Improvements Made This Week
+
+- Added an interactive expense form.
+- Allowed users to enter an expense name, amount, and category.
+- Stored multiple expense records in a JavaScript array.
+- Calculated total expenses and remaining budget.
+- Displayed expense records dynamically on the webpage.
+- Added budget feedback messages.
+- Improved form, button, and expense-list styling.
+- Added responsive styling for smaller screens.
 
 ## JavaScript Concepts Implemented
 
-### 1. Variables
-The variables `monthlyBudget`, `totalExpenses`, `budgetInput`, `expensesInput`, and `remainingBalance` store budgeting information and user input.
+### 1. Conditional Statements
 
-### 2. Data Types
-The `Number()` function converts the values entered by the user from text into numbers so they can be used in calculations.
+The `if`, `else if`, and `else` statements check the remaining balance and display a suitable message when the user is within budget, has used the entire budget, or has exceeded the budget.
 
-### 3. User Input
-The `prompt()` function asks the user to enter a monthly budget and total expenses.
+### 2. Arrays
 
-### 4. Budget Calculations
-The application subtracts total expenses from the monthly budget to calculate the remaining balance.
+The `expenses` array stores multiple expense objects. Each object contains an expense name, amount, and category.
 
-### 5. Reusable Functions
-The `calculateBalance(budget, expenses)` function performs the balance calculation. It can be reused with different budget and expense values.
+### 3. Loops
 
-### 6. Console Output
-The `console.log()` function displays the monthly budget, total expenses, and remaining balance with clear labels.
+`for` loops process the expense array to calculate total spending and display expense records.
+
+### 4. DOM Manipulation
+
+JavaScript uses `document.getElementById()` to access webpage elements. It updates text with `textContent`, creates elements with `document.createElement()`, and displays expense records using `appendChild()`.
+
+### 5. Event Listeners
+
+An event listener responds when the user submits the expense form. The `event.preventDefault()` method prevents the page from reloading during form submission.
+
+### 6. Functions
+
+The `calculateTotal()` function calculates total spending. The `updateDashboard()` function updates the totals, remaining balance, budget message, and expense list.
+
+### 7. Input Validation
+
+The application checks that the expense name is not empty, the amount is a valid positive number, and a category has been selected.
+
+## How Budget Calculations Work
+
+The application adds all expense amounts to calculate total spending.
+
+Remaining balance = Monthly budget − Total expenses.
+
+The current example uses a monthly budget of KSh 20,000.
 
 ## Project Files
-- `index.html` — contains the SpendWise dashboard structure and links to the CSS and JavaScript files.
-- `style.css` — styles the dashboard and makes the layout responsive.
-- `script.js` — collects user input and performs budget calculations.
-- `README.md` — explains the project and its JavaScript concepts.
+
+- `index.html` — dashboard structure and expense form.
+- `style.css` — dashboard styling, interactive form styling, and responsive layout.
+- `script.js` — expense data, calculations, conditional statements, loops, DOM updates, and event handling.
+- `README.md` — project description and documentation.
 
 ## How to Run
+
 1. Open `index.html` in a web browser.
-2. Enter your monthly budget when prompted.
-3. Enter your total expenses when prompted.
-4. Right-click the page and select **Inspect**, then open the **Console** tab to view the results.
+2. Enter an expense name, amount, and category.
+3. Click **Add Expense**.
+4. View the expense record, total spending, remaining balance, and budget message.
 
-## Example
-If the monthly budget is KSh 20,000 and total expenses are KSh 7,500:
+## Testing
 
-- Monthly Budget: KSh 20,000
-- Total Expenses: KSh 7,500
-- Remaining Balance: KSh 12,500
+Test by adding multiple expenses, checking the updated total, submitting invalid or incomplete information, and adding expenses until the budget is exceeded.
+
+## Challenges and Solutions
+
+- **Challenge:** The dashboard originally displayed static information.
+  **Solution:** JavaScript was added to update expense records and totals dynamically.
+
+- **Challenge:** Multiple expenses needed to be managed together.
+  **Solution:** An array stores expense records, and loops process them.
+
+- **Challenge:** Invalid input could affect calculations.
+  **Solution:** Conditional statements validate expense details before storing them.
 
 ## Limitations
-This is a beginner JavaScript project. The budget information is entered through prompts and is not saved after the page is refreshed. The application currently displays calculated results in the browser console.
+
+Expense records are stored in memory and disappear when the page is refreshed. The monthly budget is currently set to KSh 20,000 in the JavaScript code. Data persistence and user-entered budgets can be added in a future version.
 
 ## Technologies Used
+
 HTML5, CSS3, JavaScript, Git, and GitHub.
