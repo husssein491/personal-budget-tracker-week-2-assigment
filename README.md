@@ -1,48 +1,36 @@
-\# Personal Budget \& Expense Tracker
+
+
+\# SpendWise Dashboard — Week 4
 
 
 
 \## Project Description
 
-This project is a simple website for tracking personal expenses. It is built using HTML and CSS.
-
-
-
-\## Week 3: Visual Design
-
-This week, I improved the visual identity of my Budget Tracker using CSS. I chose a consistent green, white, and light-grey color palette to create a clean and professional appearance.
+SpendWise is a personal finance dashboard built using HTML and CSS. The goal of Week 4 is to create a clean, modern, and responsive dashboard layout using CSS Grid and Flexbox.
 
 
 
 \## Features
 
-\- Expense form with name, amount, category, and date fields.
+\- Sidebar navigation menu with Dashboard, Transactions, Reports, Budgets, and Settings.
 
-\- Five expense categories: Food, Transport, Rent, Entertainment, and Other.
+\- Dashboard header and welcome message.
 
-\- Table displaying five sample expenses.
+\- Financial overview showing realistic sample spending information.
 
-\- Green table header and alternating row colors.
+\- Six category cards: Food, Transport, Rent, Entertainment, Savings, and Utilities.
 
-\- Rounded input fields and a green Add Expense button.
+\- Responsive layout for mobile and desktop screens.
 
-\- Separate sections with spacing, padding, borders, and rounded corners.
+\- CSS Grid for the overall page layout.
 
-\- Help section and budgeting tips video.
+\- Flexbox for arranging header content, navigation items, and card content.
 
-\- Responsive styling for smaller screens.
+\- CSS custom properties for consistent colors and theme styling.
 
+\- Hover and keyboard focus effects on dashboard cards.
 
-
-\## Design Choices
-
-\- \*\*Colors:\*\* Dark green for headings and buttons, white for cards, and light green for alternating table rows.
-
-\- \*\*Typography:\*\* Poppins for headings and Inter for body text, loaded from Google Fonts.
-
-\- \*\*Box Model:\*\* Margin, padding, borders, and border-radius help separate the page sections and make the layout easier to read.
-
-\- \*\*Table and Form:\*\* Styled headers, input fields, borders, spacing, and hover effects improve readability.
+\- Optional dark theme based on system preferences.
 
 
 
@@ -52,33 +40,45 @@ This week, I improved the visual identity of my Budget Tracker using CSS. I chos
 
 \- CSS3
 
-\- Google Fonts
+\- CSS Grid
 
-\- Git
+\- Flexbox
 
-\- GitHub
+\- CSS custom properties
+
+\- Media queries
+
+\- Git and GitHub
 
 
 
 \## Project Files
 
-\- `index.html` — contains the structure and content of the Budget Tracker.
+\- `index.html` — contains the dashboard structure, navigation menu, header, and financial cards.
 
-\- `style.css` — controls the colors, fonts, spacing, form, table, and overall visual appearance.
+\- `style.css` — controls colors, spacing, layout, responsiveness, and card effects.
 
-\- `README.md` — explains the project, features, and design choices.
+\- `README.md` — explains the project and its features.
 
 
 
-\## How to Open
+\## Responsive Design
 
-1\. Download or clone this repository.
+The dashboard uses a media query below 768px to adapt to smaller screens. The layout can be checked with Chrome DevTools Device Toolbar.
 
-2\. Open `index.html` in a web browser.
+
+
+\## How to Run
+
+1\. Open the project folder.
+
+2\. Double-click `index.html` to open the dashboard in a browser.
 
 
 
 \## Note
 
-The Add Expense button is not functional yet. JavaScript functionality will be added in a later project stage.
+The financial information is static sample content. The dashboard does not yet calculate or save real transactions.
+
+
 
